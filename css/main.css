@@ -20,6 +20,10 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
+
+  background: hsla(164, 84.1%, 39.4%, 0.1);
+  background-image: radial-gradient(hsla(164, 84.1%, 39.4%, 1.00) 5%, transparent 0);
+  background-size: 30px 30px;
 }
 
 /*
