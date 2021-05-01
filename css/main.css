@@ -22,6 +22,57 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+html, body {
+  margin: 0;
+}
+
+.dots-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.dots-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.workexp {
+  max-width: 500px;
+  list-style-type: none;
+  padding: 0;
+}
+.workexp li {
+  padding-left: 100px;
+  position: relative;
+}
+.workexp li:before {
+  display: block;
+  content: "";
+  background: #333;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.30em;
+  position: absolute;
+  left: 50px;
+}
+.workexp li:after {
+  display: block;
+  content: "";
+  background: #333;
+  width: 2px;
+  position: absolute;
+  left: calc(50px + 0.5em - 1px);
+  top: 4.15em;
+  bottom: 0;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

@@ -1,17 +1,19 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-const color = "#ff0000";
+const color = "#009E6FAA";
+const trailColor = "#00000033";
 const spacing = 50;
 const dSize = 250;
 const dotSize = 2;
+const mousePrlx = 5;
 
 let xPos = -dSize/2;
 let yPos = -dSize/2;
 let mouseX = xPos;
 let mouseY = yPos;
 
-canvas.addEventListener("mousemove", setMousePosition, false);
+window.addEventListener("mousemove", setMousePosition, false);
 
 function setMousePosition(e) {
   mouseX = e.clientX - dSize/2;
@@ -28,19 +30,31 @@ function animate() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  const paddingH = (canvas.width % spacing) / 2;
-  const paddingV = (canvas.height % spacing) / 2;
+  let paddingH = (canvas.width % spacing) / 2;
+  let paddingV = (canvas.height % spacing) / 2;
+
+  paddingH -= mouseX / mousePrlx;
+  paddingV -= mouseY / mousePrlx;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = color;
 
-  for (let x = paddingH; x < canvas.width; x += spacing) {
-    for (let y = paddingV; y < canvas.height; y += spacing) {
+  ctx.fillStyle = trailColor;
+
+  for (let x = paddingH - spacing * 5 - dX/5; x < canvas.width; x += spacing) {
+    for (let y = paddingV - spacing * 5 - dY/5; y < canvas.height; y += spacing) {
       ctx.fillRect(x - dotSize/2, y - dotSize/2, dotSize, dotSize);
     }
   }
 
-  const data = ctx.getImageData(xPos, yPos, dSize, dSize);
+  ctx.fillStyle = color;
+
+  for (let x = paddingH - spacing * 5; x < canvas.width; x += spacing) {
+    for (let y = paddingV - spacing * 5; y < canvas.height; y += spacing) {
+      ctx.fillRect(x - dotSize/2, y - dotSize/2, dotSize, dotSize);
+    }
+  }
+
+  data = ctx.getImageData(xPos, yPos, dSize, dSize);
   const pixels = data.data;
   const pixelsCopy = [];
   let index = 0;
@@ -68,6 +82,8 @@ function animate() {
   }
 
   ctx.putImageData(data, xPos, yPos);
+
+  data = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
   requestAnimationFrame(animate);
 }
