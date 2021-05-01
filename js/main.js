@@ -131,4 +131,11 @@ window.addEventListener('DOMContentLoaded', () =>{
     overlay.classList.remove('hidden')
     overlay.classList.add('flex')
   })
+
+  closeBtn.addEventListener('click', () =>{
+    overlay.classList.remove('flex')
+    overlay.classList.add('hidden')
+  })
+
+
 })

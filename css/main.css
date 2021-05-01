@@ -213,9 +213,9 @@ textarea {
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
-  visibility: hidden;
-}
+/*.invisible {*/
+/*  visibility: hidden;*/
+/*}*/
 
 /*
  * Clearfix: contain floats
