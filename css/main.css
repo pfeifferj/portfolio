@@ -57,7 +57,7 @@ html, body {
 }
 
 .workexp {
-  max-width: 500px;
+  /*max-width: 500px;*/
   list-style-type: none;
   padding: 0;
 }
@@ -68,7 +68,7 @@ html, body {
 .workexp li:before {
   display: block;
   content: "";
-  background: #333;
+  background: #666;
   border-radius: 50%;
   width: 1em;
   height: 1em;
@@ -79,7 +79,7 @@ html, body {
 .workexp li:after {
   display: block;
   content: "";
-  background: #333;
+  background: #666;
   width: 2px;
   position: absolute;
   left: calc(50px + 0.5em - 1px);
