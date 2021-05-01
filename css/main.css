@@ -42,6 +42,10 @@ html, body {
   pointer-events: none;
 }
 
+.btn-transition {
+  transition: 0.3s;
+}
+
 .workexp {
   max-width: 500px;
   list-style-type: none;
