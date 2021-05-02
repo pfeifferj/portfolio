@@ -121,21 +121,3 @@ function fisheye(srcpixels, w, h) {
   }
   return dstpixels;
 }
-
-window.addEventListener('DOMContentLoaded', () =>{
-  const overlay = document.querySelector('#modal-overlay')
-  const projectBox1 = document.querySelector('#project-box-1')
-  const closeBtn = document.querySelector('#close-modal')
-
-  projectBox1.addEventListener('click', () =>{
-    overlay.classList.remove('hidden')
-    overlay.classList.add('flex')
-  })
-
-  closeBtn.addEventListener('click', () =>{
-    overlay.classList.remove('flex')
-    overlay.classList.add('hidden')
-  })
-
-
-})

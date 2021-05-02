@@ -83,7 +83,19 @@ Experienced technical team lead with deep knowledge of Ruby/Ruby on Rails, AWS, 
           <li class="pt-4">
             <div class="container">
               <h3 class="font-bold text-xl text-green-500 hover:text-green-600 pb-2 btn-transition">Chief Technology Officer <span class="text-black">@ Café Europe. News agency</span> <span class="text-black font-normal">(Jan 2019-present)</span></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>
+                Managing team of remote developers, designing system architecture, and shaping digital strategy. Working with stakeholders as Product Owner. Implemented Scrum in the organisation.<br>
+                <br>
+                <strong>Cloud</strong><br>
+                Oversaw cloud migration. Optimised cloud containers, cutting costs in half. Implemented CI/CD pipelines. Set up redis clusters for background jobs with sidekiq workers scaling separately from app containers.<br>
+                <br>
+                <strong>Development</strong><br>
+                Designed and built a system for the digital value chain of news production from raw information to finished article.<br>
+                Implemented an automated tracking system to give stakeholders an overview of which channels their news were published in using various APIs.<br>
+                Built APIs to provide data to legacy content management system.
+                <br>
+                Employed rapid prototyping to validate experimental ideas and deliver fast stakeholder value.
+              </p>
             </div>
           </li>
           <li class="pt-8">
@@ -92,10 +104,11 @@ Experienced technical team lead with deep knowledge of Ruby/Ruby on Rails, AWS, 
               <p>
                 Built experimental technical prototypes for clients in the aviation, event, and media industries.<br>
                 <br>
-                <strong>Natural language processing</strong>
-                For one project I built business applications (called skills) for Google Assistant and Amazon Alexa that plug into existing infrastructure to do things such as plan meetings with people. The application would check participants' calendars for the ideal time and book a meeting room or schedule a skype meeting.<br>
+                <strong>Natural language processing</strong><br>
+                I built business applications (called skills) for Amazon Alexa and Google Assistant that plug into existing infrastructure to do things such as plan meetings with people. The application would check participants' calendars for the ideal time and book a meeting room or schedule a skype meeting.<br>
                 <br>
-                ...
+                <strong>Strategy</strong><br>
+                Lead workshops for a Swiss media house focused on managing and expanding digital product portfolio with the board of directors.
               </p>
             </div>
           </li>
@@ -131,16 +144,16 @@ Experienced technical team lead with deep knowledge of Ruby/Ruby on Rails, AWS, 
           <li class="pt-4">
             <div class="container">
               <h3 class="font-bold text-xl text-green-500 hover:text-green-600 pb-2 btn-transition">BA (Hons) Business Management (Innovation & Enterprise), 2:1 honours<br><span class="text-black">@ The Open University Business School (UK)</span> <span class="text-black font-normal">(2018-2021)</span></h3>
-                <p>
-                  <strong>Stage 1</strong><br>
+              <p>
+                <strong>Stage 1</strong><br>
                 An introduction to business and management<br>
                 Design thinking: creativity for the 21st century<br>
                 <br>
-                  <strong>Stage 2</strong><br>
+                <strong>Stage 2</strong><br>
                 Shaping business opportunities<br>
                 Exploring innovation and entrepreneurship<br>
                 <br>
-                  <strong>Stage 3</strong><br>
+                <strong>Stage 3</strong><br>
                 Strategic management<br>
                 Creating futures: sustainable enterprise and innovation<br>
                 Leadership in a changing world</p>
@@ -164,7 +177,56 @@ Experienced technical team lead with deep knowledge of Ruby/Ruby on Rails, AWS, 
       <div class="container p-8 md:pt-16 p8" id="projects">
         <h2 class="text-6xl font-black">Projects</h2>
 
-        <div class="container gap-4 grid grid-cols-6 gird-rows-3 pt-8 md:pt-16 cursor-pointer" id="project-box-1">
+         <div class="container gap-4 grid grid-cols-6 gird-rows-6 pt-8 md:pt-16 cursor-pointer">
+          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-1">
+            <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Untitled ruby gem <span class="text-black font-normal">(current)</span></h3>
+            <strong class="">Problem</strong>
+            <p>I find that making complex active record queries within rails is inefficient and nearly impossible without falling back to SQL.</p>
+            <br>
+            <strong class="pt-8">Solution</strong>
+            <p class="">I am currently working on a ruby gem which allows users to make complex queries across relations and objects in just one line of ruby instead of 5+ lines of SQL per query.</p>
+          </div>
+
+          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-1">
+             <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">News Management System <span class="text-black font-normal">(2020)</span></h3>
+            <strong class="">Problem</strong>
+            <p>Café Europe's journalists were using an old, slow and feature-wise limited application to manage the news production.</p>
+            <br>
+            <strong class="pt-8">Solution</strong>
+            <p class="">I created a modern platform which made the value chain process more intuitive and introduced new features which allowed journalists to keep better track of their tasks and allowed managers to keep a better overview.</p>
+          </div>
+
+          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-2" id="project-box-1">
+            <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Blackbox <span class="text-black font-normal">(2019)</span></h3>
+            <strong class="">Problem</strong>
+            <p>Customers wanted to Café Europe to create and send out newsletters for them but wanted to manage the mailing list themselves.</p>
+            <br>
+            <strong class="pt-8">Solution</strong>
+            <p class="">I designed and coded a fully GDPR compliant blackbox solution, which allows customers to manually add and remove subscribers, import and export existing subscribers, create sign up forms. Double opt-in emails and unsubscribes are handled by the platform. Using the sendgrid API, I implemented a system which marks bounced emails. Newsletter statistics such as open rates, number of recipients etc. were made visible.<br>The recipient list is loaded into the newsletter system for delivery through an API but the recipient addresses aren't saved or visible to the editorial team.</p>
+          </div>
+
+          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-2">
+            <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600 modal-open">AMIGO <span class="text-black font-normal">(2019)</span></h3>
+             <strong class="">Problem</strong>
+             <p>Creating good looking, uniform social media posts for news stories is was very time consuming.</p>
+             <br>
+             <strong class="pt-8">Solution</strong>
+             <p class="">I wrote a commandline application that can turn titles into corporate design conforming, social media-ready images. Users can specify a custom background image, otherwise the application will use a random, abstract image from unsplash.<br>This application later formed the base for an automated solution that crawls an RSS-Feed and then adds pre-fomatted posts, including the image to queue on buffer, a social media post scheduling </p><br>
+            <a class="font-bold text-green-500 hover:text-green-600" href="#">Github</a>
+          </div>
+
+
+
+
+
+          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-1">
+            <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Project name <span class="text-black font-normal">(2018-present)</span></h3>
+          </div>
+
+          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-1">
+            <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Project name <span class="text-black font-normal">(2018-present)</span></h3>
+          </div>
+
           <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-2">
             <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Project name <span class="text-black font-normal">(2018-present)</span></h3>
           </div>
@@ -175,36 +237,6 @@ Experienced technical team lead with deep knowledge of Ruby/Ruby on Rails, AWS, 
 
           <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-1">
             <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Project name <span class="text-black font-normal">(2018-present)</span></h3>
-          </div>
-
-          <div class="btn-transition bg-white rounded shadow-lg hover:shadow-xl p-4 rounded col-span-2 row-span-1">
-            <h3 class="btn-transition font-bold text-xl text-green-500 hover:text-green-600">Project name <span class="text-black font-normal">(2018-present)</span></h3>
-          </div>
-        </div>
-
-        <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center btn-transition" id="modal-overlay">
-          <div class="bg-gray-200 p-8 mx-8 md:mx-64 rounded btn-transition">
-            <div class="flex justify-between items-center">
-              <h4 class="text-xl font-bold pb-4">Project title</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="close-modal">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </div>
-            <div class="grid grid-cols-3 grid-rows-5 gap-4">
-              <div class="col-span-1 row-span-4 rounded invisible md:visible" style="background-image: url('https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">
-              </div>
-              <div class="col-span-2 row-span-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-              <div class="col-span-1 row-span-1 max-h-12">
-                <ul class="font-bold">
-                  <li><a href="#" target="_blank" class="btn-transition text-green-500 hover:text-green-600">Link</a></li>
-                  <li>Funny number</li>
-                  <li>uwu</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>

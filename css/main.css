@@ -26,6 +26,15 @@ html, body {
   margin: 0;
 }
 
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
 .twig-bg {
   transform: rotate(175deg);
   opacity: 0.1;
